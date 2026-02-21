@@ -3,7 +3,7 @@
 <html>
 <head>
 	<title>Untitl&ouml;&ouml;d entinen se8 piste org</title>
-
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <style type="text/css">
 
 html, body { height: 100%; }
@@ -16,14 +16,14 @@ body {
 	background-color: #ddd;
 }
 
-/* SIS�LT� */
+/* SISÄLTÖ */
 .content {
-	/* t�rkein: est�� leiskan venymisen vanhassa table-layoutissa */
+	/* tärkein: estää leiskan venymisen vanhassa table-layoutissa */
 	box-sizing: border-box;
 	width: 100%;
 	max-width: 100%;
 
-	/* pienemm�t paddingit ettei riko 365px saraketta */
+	/* pienemmät paddingit ettei riko 365px saraketta */
 	padding: 12px 14px 12px 12px;
 
 	color: #000;
@@ -48,12 +48,12 @@ body {
 
 /* LINKKILISTA */
 .linkbox {
-	/* t�rkein: est�� linkkilaatikon venymisen 151px alueesta */
+	/* tärkein: estää linkkilaatikon venymisen 151px alueesta */
 	box-sizing: border-box;
 	width: 100%;
 	max-width: 100%;
 
-	/* pienemm�t paddingit, koska linkkialue on kapea */
+	/* pienemmät paddingit, koska linkkialue on kapea */
 	padding: 8px 8px 8px 8px;
 
 	font-size: 12px;
@@ -96,6 +96,22 @@ body {
 
 img { display: block; }
 
+/* --- UUSI: lukitse sarakeleveydet ettei veny leveällä näytöllä --- */
+table.leiska {
+	table-layout: fixed;
+}
+
+/* --- UUSI: älä anna "slice"-taustojen toistua, koska se näyttää repeämiseltä --- */
+td[background] {
+	background-repeat: no-repeat;
+	background-position: top left;
+}
+
+/* mutta ruler-taustat saa toistua normaalisti */
+td[background="images/ruler_yla.gif"],
+td[background="images/vasen_ruler_tausta.gif"] {
+	background-repeat: repeat;
+}
 </style>
 </head>
 
@@ -111,7 +127,7 @@ img { display: block; }
 		<tr>
 		    <td align="center" valign="middle" background="" style="padding-top:25px;">
 		<!----------------- leiskataulukko alkaa ----------------->
-				<table align="center" width="100%" height="100%" cellspacing="0" cellpadding="0" border="0">
+				<table class="leiska" align="center" width="100%" height="100%" cellspacing="0" cellpadding="0" border="0">
 				<tr>
 				    <td width="30%" height="30%" background=""><img src="images/1x1_transpa.gif" alt="" width="1" height="1" border="0"></td>
 				    <td width="262" height="30%" background=""></td>
@@ -166,7 +182,7 @@ img { display: block; }
                                         <a href="#">Photoshop-leiska</a>
                                         <a href="#">Poser-grafiikat</a>
                                         <a href="#">Aikakauden web</a>
-                                        <a href="#">Päivitysloki</a>
+                                        <a href="#">PÃ¤ivitysloki</a>
                                         <a href="#">Yhteystiedot</a>
                                     </div>
 								</td>
@@ -185,27 +201,27 @@ img { display: block; }
 				    <td width="365" height="477" background="images/3_2.gif" align="left" valign="top">
 				<!-- sisaltokentta alkaa niinku tasta -->
 					<div class="content">
-                        <h1>Vanha Photoshop-leiska netissä</h1>
+                        <h1>Vanha Photoshop-leiska netissÃ¤</h1>
 
                         <p class="lead">
-                        Tämä sivu on oikeasti piirretty joskus ~2000 paikkeilla Photoshopissa ja pilkottu
-                        GIF-palasiksi, jotta se saatiin “toimimaan” html:ssä. Silloin tehtiin näin.
+                        TÃ¤mÃ¤ sivu on oikeasti piirretty joskus ~2000 paikkeilla Photoshopissa ja pilkottu
+                        GIF-palasiksi, jotta se saatiin â€œtoimimaanâ€ html:ssÃ¤. Silloin tehtiin nÃ¤in.
                         </p>
 
                         <p>
-                        Ruudullinen tausta on se sama läpinäkyvyys-checkeri, rulerit reunoilla ja
-                        bannerin ympärillä pyörii se katkoviiva joka näyttää marquee-valinnalta.
-                        Eli käytännössä koko sivu on vähän kuin Photoshopin screenshot.
+                        Ruudullinen tausta on se sama lÃ¤pinÃ¤kyvyys-checkeri, rulerit reunoilla ja
+                        bannerin ympÃ¤rillÃ¤ pyÃ¶rii se katkoviiva joka nÃ¤yttÃ¤Ã¤ marquee-valinnalta.
+                        Eli kÃ¤ytÃ¤nnÃ¶ssÃ¤ koko sivu on vÃ¤hÃ¤n kuin Photoshopin screenshot.
                         </p>
 
                         <p>
                         Osa hahmoista on tehty Poserilla. Aika outoa kamaa nykymittapuulla,
-                        mutta tämä oli ajalta ennen kuin responsiivisuus tappoi luovan designin. 🙂
+                        mutta tÃ¤mÃ¤ oli ajalta ennen kuin responsiivisuus tappoi luovan designin. ðŸ™‚
                         </p>
 
                         <p>
-                        Pohja on jätetty alkuperäiseksi — lisätty vaan vähän CSS:ää että tekstiä pystyy
-                        lukemaan ilman että silmät kuolee.
+                        Pohja on jÃ¤tetty alkuperÃ¤iseksi â€” lisÃ¤tty vaan vÃ¤hÃ¤n CSS:Ã¤Ã¤ ettÃ¤ tekstiÃ¤ pystyy
+                        lukemaan ilman ettÃ¤ silmÃ¤t kuolee.
                         </p>
 					</div>
 				<!-- sisaltokentta loppuu niinku tahan -->
